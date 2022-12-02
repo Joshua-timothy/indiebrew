@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndieBrew - Signup</title>
+    <meta name="description" content="IndieBrew for personal feed digest" />
+    <meta name="author" content="Joshua Timothy" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="signup-nav">
+      <img
+        class="signup-nav__logo"
+        src="images/Logo.svg"
+        alt="Logo IndieBrew"
+      />
+      <ul class="signup-nav__item">
+        <a href="index.html">
+          <img class="signup-nav__item--img" src="images/Back Arrow.svg" alt=""
+        /></a>
+        <li class="signup-nav__item--list">
+          <a class="signup-nav__item--link" href="index.html"
+            >Back to homepage</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="signup-con">
+        <div class="signup container-signup">
+          <div class="signup__text">
+            <h1 class="signup__text--main margin-bottom-l">
+              Create your personalized feed.
+            </h1>
+            <p class="signup__text--sub margin-bottom-l">
+              🛠️ <strong>Over 20 resources.</strong> With resources ranging from
+              Reddit to IndieHackers, we've got all your needs covered.
+            </p>
+            <p class="signup__text--sub margin-bottom-l">
+              🥳 <strong>Delivered weekly.</strong> Every week at exactly
+              Tuesday 12:00 P.M. EST - expect a value-packed digest right in
+              your email.
+            </p>
+            <p class="signup__text--sub">
+              🚀 <strong>Unlimited ideas.</strong> With all the ideas you'll be
+              reading about, what's stopping you from creating a sustainable
+              startup?
+            </p>
+          </div>
+          <div class="signup__form">
+            <form class="form" action="#">
+              <h2 class="form__title margin-bottom-l">
+                Create your IndieBrew Account
+              </h2>
+              <div class="form__group margin-bottom-l">
+                <label class="form__group--label">Email</label>
+                <input
+                  class="form__group--input"
+                  type="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <div class="form__group margin-bottom-l">
+                <label class="form__group--label">Full Name</label>
+                <input
+                  class="form__group--input"
+                  type="text"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form__group margin-bottom-l">
+                <label class="form__group--label">Password</label>
+                <input
+                  class="form__group--input"
+                  type="password"
+                  placeholder="At least 8 characters"
+                  required
+                />
+              </div>
+              <div class="form__group margin-bottom-l">
+                <input
+                  class="form__group--checkbox"
+                  type="checkbox"
+                  id="terms"
+                  required
+                />
+                <label class="form__group--terms" for="terms"
+                  >By creating an account on IndieBrew, you agree to the
+                  <a href="#">Terms & Conditions.</a>
+                </label>
+              </div>
+              <div class="form__group">
+                <button class="form__group--btn">Create an Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <p class="copyright">
+        &copy;IndieBrew. Made With
+        <img class="copyright__img" src="images/basic_heart.svg" alt="heart" />
+        By <span>DevJhozi</span>
+      </p>
+    </div>
+  </body>
+</html>

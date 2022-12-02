@@ -1,0 +1,22 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+h1 {
+  color: $Main-color;
+}
+
+p {
+  color: $Sub-color;
+}
+
+span {
+  color: $Color-White;
+}
+
+.bold-cl {
+  color: #7a00ea;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}

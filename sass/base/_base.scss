@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html {
+  //1 rem = 10px; 10px/16px = 62.5%
+  font-size: 62.5%;
+}
+
+body {
+  font-family: inherit;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container {
+  max-width: 130rem;
+  margin-inline: auto;
+}

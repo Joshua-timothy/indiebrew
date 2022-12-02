@@ -1,0 +1,118 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+
+  @include respond(phone) {
+    display: block;
+    padding: 0;
+  }
+
+  &__logo-box {
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      width: 100%;
+    }
+  }
+
+  .toggle__con {
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+
+  #toggle,
+  #toggle::after,
+  #toggle::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 0.3rem;
+    background-color: black;
+    transition: all 0.3s;
+    border-radius: 1rem;
+  }
+
+  #toggle {
+    position: relative;
+    transform: translateY(-0.5rem);
+    &::after {
+      transform: translateY(1rem);
+      position: absolute;
+    }
+    &::before {
+      transform: translateY(0.5rem);
+      position: absolute;
+    }
+  }
+
+  #toggle.active {
+    &::after {
+      transform: rotate(-135deg);
+    }
+  }
+
+  #toggle.active {
+    &::before {
+      transform: rotate(135deg);
+    }
+  }
+
+  #toggle.active {
+    background-color: transparent;
+  }
+
+  #navbar {
+    @include respond(tab-port) {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__navbar {
+    @include respond(tab-port) {
+      position: fixed;
+      top: 23rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffed;
+      box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 8%);
+      border-radius: 5px;
+      width: 80%;
+      padding: 6rem 0;
+    }
+
+    &--list {
+      display: inline-block;
+      margin-inline: 1.6rem;
+      font-size: 1.6rem;
+
+      @include respond(tab-port) {
+        display: block;
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    &--link,
+    &--link:link,
+    &--visited {
+      color: $Main-color;
+    }
+  }
+}

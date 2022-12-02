@@ -1,0 +1,192 @@
+body {
+  background-image: linear-gradient(to left, #fff1e8, #fff2e8);
+}
+
+.container-signup {
+  max-width: 200rem;
+  margin-inline: auto;
+}
+
+.signup-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 6rem;
+
+  @include respond(phone) {
+    padding: 3rem 2rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &--list {
+      font-size: 1.6rem;
+      font-weight: 600;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &--link,
+    &--link:link,
+    &--link:visited {
+      color: #040403;
+    }
+
+    &--img {
+      margin-right: 1rem;
+      padding: 0.7rem 1rem;
+      background-color: #fff6e9;
+      border: 1px solid rgba(128, 128, 128, 0.74);
+      border-radius: 0.5rem;
+      max-width: 100%;
+    }
+  }
+}
+
+.signup-con {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 6rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  &__text {
+    width: 50%;
+
+    @include respond(tab-port) {
+      width: 90%;
+      margin-inline: auto;
+    }
+    &--main {
+      font-size: 2.5rem;
+    }
+
+    &--sub {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #000000;
+
+      strong {
+        color: $Main-color;
+      }
+    }
+  }
+
+  &__form {
+    width: 40%;
+
+    @include respond(tab-port) {
+      width: 80%;
+      margin-inline: auto;
+      padding-top: 3rem;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+    .form {
+      background-color: #ffffed;
+      padding: 3rem;
+      border-radius: 0.5rem;
+
+      &__title {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+
+      &__group {
+        &--label {
+          font-weight: 600;
+          font-size: 1.6rem;
+
+          @include respond(phone) {
+            font-size: 1.3rem;
+          }
+        }
+
+        &--input {
+          width: 100%;
+
+          font-family: inherit;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          border: 1px solid #c3baad;
+          background-color: transparent;
+
+          &::placeholder {
+            color: #898279;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        &--checkbox {
+          margin-right: 0.5rem;
+        }
+
+        &--terms {
+          font-size: 1.6rem;
+          cursor: pointer;
+
+          a,
+          a:link,
+          a:visited {
+            font-weight: 700;
+            color: #7a00ea;
+            text-decoration: underline;
+          }
+        }
+
+        &--btn {
+          width: 100%;
+          padding: 1rem;
+          border: none;
+          background-color: #7a00ea;
+          border-radius: 0.5rem;
+          color: #fff;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+
+  &__img {
+    width: 1.6rem;
+    margin: 0;
+    display: block;
+    margin-inline: 0.3rem;
+  }
+
+  span {
+    text-decoration: underline;
+    color: #7a00ea;
+    margin-left: 0.3rem;
+    font-weight: 600;
+  }
+}
