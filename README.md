@@ -12,7 +12,6 @@
 - ### **Easy to Setup 💯** 
 - ### **Free to Use ( OpenSource ) 🥳** 
 - ### **Fully Responsive 🚀** 
-- ### **Great Audits Score 🎖️** 
 
 <br/>
 
