@@ -31,7 +31,7 @@
 <br/>
 ```
 
-**NOTE**: I highly recommend to checkout the [Fylo Playground Link](https://devjhozi.github.io/indiebrew)
+**NOTE**: I highly recommend to checkout the [IndieBrew Playground Link](https://devjhozi.github.io/indiebrew)
 
 <br>
 ---
