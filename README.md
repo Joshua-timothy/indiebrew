@@ -2,7 +2,7 @@
 
 ## A Blazing Fast WebPage, Designed By [Codewell] 🚀 
 
-## [Demo Link](https://devjhozi.github.io/indiebrew) 🔗
+## [Demo Link](https://joshua-timothy.github.io/indiebrew) 🔗
  
 <br/>
 ---
